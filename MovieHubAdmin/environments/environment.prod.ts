@@ -8,6 +8,7 @@ export const environment = {
   USERDATA_KEY: 'authf649fc9a5f55',
   isMockEnabled: true,
   apiUrl: 'api',
+  BACKEND: 'http://127.0.0.1:8000',
   appThemeName: 'Metronic',
   appPurchaseUrl: 'https://1.envato.market/EA4JP',
   appHTMLIntegration: 'https://preview.keenthemes.com/metronic8/demo1/documentation/base/helpers/flex-layouts.html',
@@ -156,6 +157,10 @@ export const environment = {
       'thumbnail': './assets/media/demos/demo20.png'
     },
   },
+  
+ URL_BACKEND: 'http://api.dominio.com',
+  URL_SERVICIOS: 'http://api.dominio.com/api',
+  URL_FRONTED: 'http://admin.dominio.com',
 };
 
 /*

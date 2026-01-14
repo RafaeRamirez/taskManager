@@ -8,6 +8,7 @@ export const environment = {
   USERDATA_KEY: 'authf649fc9a5f55',
   isMockEnabled: true,
   apiUrl: 'api',
+  BACKEND: 'http://127.0.0.1:8000',
   appThemeName: 'Metronic',
   appPurchaseUrl: 'https://1.envato.market/EA4JP',
   appHTMLIntegration:
@@ -159,6 +160,9 @@ export const environment = {
       thumbnail: './assets/media/demos/demo20.png',
     },
   },
+  URL_BACKEND: 'http://127.0.0.1:8000/',
+  URL_SERVICIOS: 'http://127.0.0.1:8000/api',
+  URL_FRONTED: 'http://localhost:4200',
 };
 
 /*
