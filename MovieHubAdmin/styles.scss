@@ -10,3 +10,21 @@
 @import "./assets/plugins/keenicons/duotone/style.css";
 @import "./assets/plugins/keenicons/outline/style.css";
 @import "./assets/plugins/keenicons/solid/style.css";
+
+
+// regular style toast (CSS to avoid Sass/Bootstrap function conflicts)
+@import 'ngx-toastr/toastr';
+
+
+.toast-success {
+    background-color: #d4ffd4 !important;
+}
+.toast-error {
+    background-color: #FFEEF3 !important;
+}
+.toast-info {
+    background-color: #b6e4ff !important;
+}
+.toast-warning {
+    background-color: #ffe1b6 !important;
+}

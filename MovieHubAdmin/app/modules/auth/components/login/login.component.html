@@ -74,7 +74,7 @@
   <ng-container *ngIf="hasError">
     <div class="mb-lg-15 alert alert-danger">
       <div class="alert-text font-weight-bold">
-        The login details are incorrect
+        El correo o la contrase&ntilde;a son incorrectos
       </div>
     </div>
   </ng-container>
@@ -116,11 +116,29 @@
 
     <label class="form-label fw-bolder text-gray-900 fs-6 mb-0">Password</label>
 
-    <input class="form-control bg-transparent" type="password" name="password" autocomplete="off"
-      formControlName="password" [ngClass]="{
-        'is-invalid': loginForm.controls['password'].invalid,
-        'is-valid': loginForm.controls['password'].valid
-      }" />
+    <div class="position-relative">
+      <input class="form-control bg-transparent" [type]="showPassword ? 'text' : 'password'" name="password"
+        autocomplete="off" formControlName="password" [ngClass]="{
+          'is-invalid': loginForm.controls['password'].invalid,
+          'is-valid': loginForm.controls['password'].valid
+        }" />
+      <button type="button"
+        class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2"
+        (click)="togglePasswordVisibility()"
+        [attr.aria-label]="showPassword ? 'Hide password' : 'Show password'">
+        <i class="ki-duotone ki-eye-slash fs-1" [class.d-none]="showPassword">
+          <span class="path1"></span>
+          <span class="path2"></span>
+          <span class="path3"></span>
+          <span class="path4"></span>
+        </i>
+        <i class="ki-duotone ki-eye fs-1" [class.d-none]="!showPassword">
+          <span class="path1"></span>
+          <span class="path2"></span>
+          <span class="path3"></span>
+        </i>
+      </button>
+    </div>
     <ng-container [ngTemplateOutlet]="formError" [ngTemplateOutletContext]="{
         validation: 'required',
         message: 'Password is required',

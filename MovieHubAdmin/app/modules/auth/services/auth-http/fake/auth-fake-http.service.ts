@@ -69,6 +69,26 @@ export class AuthHTTPService {
     );
   }
 
+  resetPassword(
+    email: string,
+    token: string,
+    password: string,
+    passwordConfirmation: string
+  ): Observable<boolean> {
+    if (!token || password !== passwordConfirmation) {
+      return of(false);
+    }
+
+    return this.getAllUsers().pipe(
+      map((result: UserModel[]) => {
+        const user = result.find(
+          (u) => u.email.toLowerCase() === email.toLowerCase()
+        );
+        return user !== undefined;
+      })
+    );
+  }
+
   getUserByToken(token: string): Observable<UserModel | undefined> {
     const user = UsersTable.users.find((u: UserModel) => {
       return u.authToken === token;

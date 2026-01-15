@@ -56,6 +56,23 @@ testem.log
 .angular
 **/coverage/
 
+# environment files
+.env
+.env.*
+!.env.example
+
+# logs
+*.log
+**/*.log
+
+# PHP/Laravel
+/vendor
+**/vendor/
+/storage
+**/storage/
+/bootstrap/cache
+**/bootstrap/cache/
+
 # System Files
 .DS_Store
 Thumbs.db
