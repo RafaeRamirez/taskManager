@@ -5,9 +5,9 @@ const RtlCssPlugin = require('rtlcss-webpack-plugin')
 
 // global variables
 const rootPath = path.resolve(__dirname)
-const distPath = rootPath + '/MovieHubAdmin/assets'
+const distPath = rootPath + '/taskManager-Admin/assets'
 const entries = {
-  "css/style": "./MovieHubAdmin/assets/sass/style.scss",
+  "css/style": "./taskManager-Admin/assets/sass/style.scss",
 }
 
 // remove older folders and files

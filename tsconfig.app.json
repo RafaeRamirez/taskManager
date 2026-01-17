@@ -6,10 +6,10 @@
     "types": []
   },
   "files": [
-    "MovieHubAdmin/main.ts",
-    "MovieHubAdmin/polyfills.ts"
+    "taskManager-Admin/main.ts",
+    "taskManager-Admin/polyfills.ts"
   ],
   "include": [
-    "MovieHubAdmin/**/*.d.ts"
+    "taskManager-Admin/**/*.d.ts"
   ]
 }

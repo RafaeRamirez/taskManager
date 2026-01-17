@@ -8,11 +8,11 @@
     ]
   },
   "files": [
-    "MovieHubAdmin/test.ts",
-    "MovieHubAdmin/polyfills.ts"
+    "taskManager-Admin/test.ts",
+    "taskManager-Admin/polyfills.ts"
   ],
   "include": [
-    "MovieHubAdmin/**/*.spec.ts",
-    "MovieHubAdmin/**/*.d.ts"
+    "taskManager-Admin/**/*.spec.ts",
+    "taskManager-Admin/**/*.d.ts"
   ]
 }

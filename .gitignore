@@ -78,4 +78,4 @@ testem.log
 Thumbs.db
 
 # Local Laravel app (nested project)
-/MovieHub-app/
+/taskManager-app/

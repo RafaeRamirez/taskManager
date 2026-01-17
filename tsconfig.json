@@ -5,7 +5,7 @@
     "baseUrl": "./",
     "paths": {
       "src/*": [
-        "MovieHubAdmin/*"
+        "taskManager-Admin/*"
       ]
     },
     "outDir": "./dist/out-tsc",

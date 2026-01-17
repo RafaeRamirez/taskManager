@@ -59,7 +59,7 @@
   <!--end::Separator-->
 
   <!-- begin::Alert info-->
-  <ng-container *ngIf="!hasError">
+  <ng-container *ngIf="!hasError && (defaultAuth.email || defaultAuth.password)">
     <div class="mb-10 bg-light-info p-8 rounded">
       <div class="text-info">
         Use account <strong>{{ defaultAuth.email }}</strong> and password
